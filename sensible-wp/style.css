@@ -417,7 +417,7 @@ input[type="submit"] {
 	border: 2px solid;
 	border-color: #ea474b;
 	border-radius: 4px;
-	background: #ea474b;
+	background: red;
 	box-shadow: none;
 	color: #ffffff !important; 
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -519,7 +519,7 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {	font-family: Chaparral Pro Regular;
+a {	
 	color: #ea474b;
 }
 
@@ -552,6 +552,7 @@ a:active {
 
 .main-navigation a {
 	font-weight: 600;
+	font-family: Brandon Grotesque Bold;
 	display: block;
 	text-decoration: none;
 	color: #fff;
@@ -837,10 +838,10 @@ a:active {
 	vertical-align: middle;
 }
 .hero-content span h2 {
-	font-weight: 400px;
+	font-weight: 600px;
 	font-size: 62px;
 	line-height: 64px;
-	color: #98002e;
+	color: white;
 	margin-bottom: 40px;
 	padding-top: 30px;
 }
@@ -1031,6 +1032,7 @@ a:active {
 }
 .footer-contact h5 {
 	color: #ea474b;
+	font-family: Chaparral Pro Regular;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -1887,5 +1889,6 @@ body {
 }
 
 .label {border: 1px solid gray;}
-
 #label-align a {padding-right:1em;}
+.found {font-family:Brandon Grotesque Bold;}
+h6.wow.animated.fadeInLeft {font-family: Chaparral Pro Regular;}
