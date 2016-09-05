@@ -146,8 +146,7 @@
 				<?php if ( get_theme_mod( 'sensiblewp_footerid' ) ) : ?> 
         			<?php echo wp_kses_post( get_theme_mod( 'sensiblewp_footerid' )); // footer id ?>
 				<?php else : ?>  
-    				<?php echo '<a href="http://darkmassdesign.com/">Dark Mass Design</a> | All Rights Reserved | &copy;' date('Y'); ?>
-
+    				<?php printf( __( 'Theme: %1$s by %2$s', 'sensible-wp' ), 'Sensible', '<a href="http://modernthemes.net" rel="designer">modernthemes.net</a>' ); ?>
 				<?php endif; ?>
 			</div><!-- .site-info --> 
         </div><!-- grid -->

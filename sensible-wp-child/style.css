@@ -1,16 +1,66 @@
 /*
-Theme Name: Angela Estate Theme
-Theme URI:  https://angelaestate.com
-Author: Dark Mass Design
-Author URI: http://darkmassdesign.com
-Template:   sensible-wp
-Description: Angela Estate is a small, family-owned craft winery in Oregon with an international pedigree. The winery is a collaboration between second-generation South African winery owners, Antony & Angela Beck and winemaker, Ken Wright. We specialize in producing single-vineyard, estate Pinot noirs from the Yamhill-Carlton AVA in the Willamette Valley of Oregon.
-Version: 1.0.0
-Text Domain: sensible-wp-child
+Theme Name: Sensible WP
+Theme URI: https://modernthemes.net/wordpress-themes/sensible/
+Author: ModernThemes
+Author URI: http://modernthemes.net
+Description: Sensible is a responsive, multi-purpose theme which can be used for any type of website. It is a flexible theme which can be used to help build an online presence with attractive features. We made this theme with everyone in mind. Business? No problem. Agency? Knock yourself out. Just trying to get a blog up? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. You can check out the demo at https://modernthemes.net/theme-demos/?theme=Sensible for a closer look.
+Version: 1.2.5
+Text Domain: sensible-wp
 Tags: light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, theme-options, translation-ready, custom-colors, featured-images
 License: GNU General Public License v2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+Sensible, Copyright 2015 ModernThemes
+Sensible is distributed under the terms of the GNU GPL
+
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Sensible is built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Sensible incorporates code from Moesia, Copyright 2014 aThemes
+Moesia is distributed under the terms of the GNU GPL 
+
+Sensible bundles the following third-party resources:
+
+Simple Grid by ThisisDallas Copyright (C) 2013 Dallas Bass
+Simple Grid is licensed under the MIT License.
+http://thisisdallas.github.io/Simple-Grid/
+
+Custom Meta Boxes by WebDevStudio (c) 2014 WebDevStudio 
+Custom Meta Boxes is licensed under the terms of the GNU GPLv2 
+https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress
+
+Font Awesome by Dave Gandy
+Font Awesome is licensed under the following: (Font: SIL OFL 1.1, CSS: MIT License)
+http://fortawesome.github.io/Font-Awesome/
+
+Parallax.js by PixelCog Inc. (c) 2015 PixelCog Inc.
+Parallax.js is distributed under the The MIT License (MIT).
+https://github.com/pixelcog/parallax.js
+
+wow.js by Matthieu Aussaguel Copyright (C) 2014; 
+wow.js is is distributed under the The MIT License (MIT).
+https://github.com/matthieua/WOW
+
+The HTML5 Shiv by aFarkas Copyright (c) 2014 Alexander Farkas (aFarkas).
+The HTML5 Shiv is licensed under the terms of the GNU GPLv2 
+https://github.com/aFarkas/html5shiv 
+
+jPushMenu by takien
+jPushMenu is licensed under the terms of the GNU GPLv2 
+https://github.com/takien/jPushMenu
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/ 
 */
 
 /*--------------------------------------------------------------
@@ -152,13 +202,37 @@ a.added_to_cart {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
+@font-face {
+    font-family: Brandon Grotesque Bold; 
+    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/BrandonGrotesque-Bold.otf); 
+    font-weight: bold; 
+}
+
+@font-face {
+    font-family: Chaparral Pro Regular; 
+    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Regular.otf); 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: Chaparral Pro Italic; 
+    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Italic.otf); 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: Chaparral Pro Bold; 
+    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Bold.otf); 
+    font-weight: normal; 
+}
+
 body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: Chaparral Pro Regular;, 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 400; 
 	font-size: 15px;
 	line-height: 1.8;
@@ -169,32 +243,32 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 {	font-family: Brandon Grotesque Bold;
 	clear: both;
 	margin-bottom: 0.5em;
 }
 
-h1 { font-size: 36px; line-height: 40px; }
-h2 { font-size: 32px; line-height: 36px; }
-h3 { font-size: 28px; line-height: 32px; }
-h4 { font-size: 24px; line-height: 28px; }
-h5 { font-size: 20px; line-height: 24px; }
-h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase; }
+h1 { font-size: 36px; line-height: 40px;}
+h2 { font-size: 32px; line-height: 36px;}
+h3 { font-size: 28px; line-height: 32px;}
+h4 { font-size: 24px; line-height: 28px;}
+h5 { font-size: 20px; line-height: 24px;}
+h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase;}
 
-p {
+p {	font-family: Chaparral Pro Regular;
 	margin-bottom: 1.5em;
 	color: #8c9398;
 }
 
 b,
-strong {
+strong {font-family: Chaparral Pro Bold;
 	font-weight: 600;
 }
 
 dfn,
 cite,
 em,
-i {
+i {	font-family: Chaparral Pro Italic;
 	font-style: italic;
 }
 
@@ -203,6 +277,7 @@ blockquote {
 	border-radius: 0 4px 4px 0;
     border-left: 5px solid #ea474b;
     color: #999;
+font-family: Chaparral Pro Italic;
     font-style: italic;
     padding: 22px 20px 1px;
 	margin: 0 0 1em;
@@ -214,7 +289,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: Chaparral Pro Regular,"Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
@@ -228,7 +303,7 @@ code,
 kbd,
 tt,
 var {
-	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font: 15px Chaparral Pro Regular, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr,
@@ -342,7 +417,7 @@ input[type="submit"] {
 	border: 2px solid;
 	border-color: #ea474b;
 	border-radius: 4px;
-	background: #ea474b;
+	background: red;
 	box-shadow: none;
 	color: #ffffff !important; 
 	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
@@ -444,7 +519,7 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
+a {	
 	color: #ea474b;
 }
 
@@ -477,6 +552,7 @@ a:active {
 
 .main-navigation a {
 	font-weight: 600;
+	font-family: Brandon Grotesque Bold;
 	display: block;
 	text-decoration: none;
 	color: #fff;
@@ -762,10 +838,10 @@ a:active {
 	vertical-align: middle;
 }
 .hero-content span h2 {
-	font-weight: 400px;
+	font-weight: 600px;
 	font-size: 62px;
 	line-height: 64px;
-	color: #ffffff;
+	color: white;
 	margin-bottom: 40px;
 	padding-top: 30px;
 }
@@ -956,6 +1032,7 @@ a:active {
 }
 .footer-contact h5 {
 	color: #ea474b;
+	font-family: Chaparral Pro Regular;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -965,6 +1042,7 @@ a:active {
 	margin-bottom: 15px;
 }
 .site-footer {
+	font-family: Chaparral Pro Regular;
 	font-weight: 400;
 	background: #242830;
 	padding: 20px 0 40px;
@@ -1811,5 +1889,6 @@ body {
 }
 
 .label {border: 1px solid gray;}
-
 #label-align a {padding-right:1em;}
+.found {font-family:Brandon Grotesque Bold;}
+h6.wow.animated.fadeInLeft {font-family: Chaparral Pro Regular;}
