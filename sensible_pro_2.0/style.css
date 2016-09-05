@@ -2109,8 +2109,11 @@ body {
 	.secondary-header .push-right {
 		float: right;
 	}
-	
-	 
+
+	.alignleft {
+	display: block;
+	float: none;
+	}
 }
 
 
