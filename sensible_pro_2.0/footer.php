@@ -240,7 +240,7 @@
 				
 				<?php else : ?>  
     				
-					<?php printf( __( 'Theme: %1$s by %2$s', 'sensible' ), 'Sensible', '<a href="http://modernthemes.net" rel="designer">modernthemes.net</a>' ); ?> 
+					<?php echo '<a href="http://darkmassdesign.com">Dark Mass Design</a> | All Rights Reserved | &copy ', Date('Y'); ?> 
 				
 				<?php endif; ?> 
 			
