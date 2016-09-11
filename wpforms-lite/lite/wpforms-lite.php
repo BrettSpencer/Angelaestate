@@ -572,6 +572,14 @@ class WPForms_Lite {
 				</div>
 				<div class="wpforms-addon-action"><a href="<?php echo $upgrade; ?>" target="_blank">Upgrade Now</a></div>
 			</div>
+			<div class="wpforms-addon-item wpforms-addon-status-upgrade wpforms-second">
+				<div class="wpforms-addon-image"><img src="https://wpforms.com/images/addon-icon-zapier.png"></div>
+				<div class="wpforms-addon-text">
+					<h4>Zapier Addon</h4>
+					<p class="desc">WPForms Zapier addon allows you to connect your forms with over 500+ web applications using Zapier.</p>
+				</div>
+				<div class="wpforms-addon-action"><a href="<?php echo $upgrade; ?>" target="_blank">Upgrade Now</a></div>
+			</div>
 			<div style="clear:both"></div>
 		</div>
 		<?php

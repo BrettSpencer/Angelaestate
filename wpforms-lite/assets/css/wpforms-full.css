@@ -97,6 +97,8 @@ div.wpforms-container-full .wpforms-form ul li:last-of-type {
     font-weight: normal; 
 }
 
+
+
 /* Field sizes - medium */
 div.wpforms-container-full .wpforms-form input.wpforms-field-medium,
 div.wpforms-container-full .wpforms-form select.wpforms-field-medium,
@@ -410,7 +412,7 @@ div.wpforms-container-full .wpforms-form select {
 div.wpforms-container-full .wpforms-form input[type=submit],
 div.wpforms-container-full .wpforms-form button[type=submit],
 div.wpforms-container-full .wpforms-form .wpforms-page-button {
-	background-color: #98002e;
+	background-color: #eee;
 	border: 1px solid #ddd;
 	color: #333;
 	font-size: 1em;

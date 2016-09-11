@@ -112,6 +112,14 @@
 								} else {
 									error.insertAfter(element);
 								}
+							},
+							submitHandler: function(form) {
+								var $submit = $(form).find('.wpforms-submit'),
+									altText = $submit.data('alt-text');
+								if (altText) {
+									$submit.text(altText).prop('disabled', true);
+								}
+								form.submit();
 							}
 						}
 					}

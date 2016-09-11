@@ -56,7 +56,7 @@ class WPForms_Process {
 		}
 
 		if ( !empty( $_POST['wpforms']['id'] ) ) {
-			$this->process( $_POST['wpforms'] );
+			$this->process( stripslashes_deep( $_POST['wpforms'] ) );
 		}
 	}
 

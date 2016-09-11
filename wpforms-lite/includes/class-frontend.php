@@ -573,8 +573,14 @@ class WPForms_Frontend {
 
 		$settings       = $form_data['settings'];
 		$submit         = apply_filters( 'wpforms_field_submit' , esc_html( $settings['submit_text'] ), $form_data );
+		$submit_process = '';
 		$submit_classes = array();
 		$visible        = wpforms_has_pagebreak( $form_data ) ? 'style="display:none;"' : '';
+
+		// Check for submit button alt-text
+		if ( !empty( $settings['submit_text_processing'] ) ) {
+			$submit_process = 'data-alt-text="' . esc_attr( $settings['submit_text_processing'] ) .'"';
+		}
 
 		// Check user defined submit button classes
 		if ( !empty( $settings['submit_class'] ) ) {
@@ -609,7 +615,13 @@ class WPForms_Frontend {
 
 				echo '<input type="hidden" name="wpforms[id]" value="' . $form->ID . '">';
 
-				echo '<button type="submit" name="wpforms[submit]" class="wpforms-submit ' . implode( ' ', $submit_classes ) . '" id="wpforms-submit-' . $form->ID . '" value="wpforms-submit">' . $submit . '</button>';
+				printf( 
+					'<button type="submit" name="wpforms[submit]" class="wpforms-submit %s" id="wpforms-submit-%d" value="wpforms-submit" %s>%s</button>',
+					implode( ' ', $submit_classes ),
+					$form->ID,
+					$submit_process,
+					$submit
+				);
 
 		echo '</div>';
 	}
@@ -743,7 +755,7 @@ class WPForms_Frontend {
 		endif;
 
 		// Load jquery input mask library - https://github.com/RobinHerbots/jquery.inputmask
-		if ( $this->assets_global() || true == wpforms_has_field_type( 'phone', $this->forms, true ) ) :
+		if ( $this->assets_global() || true == wpforms_has_field_type( array( 'phone', 'address' ), $this->forms, true ) ) :
 		wp_enqueue_script(
 			'wpforms-maskedinput',
 			WPFORMS_PLUGIN_URL . 'assets/js/jquery.inputmask.bundle.min.js',

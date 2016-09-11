@@ -616,7 +616,7 @@
 			});
 
 			// Display toggle for Address field hide address line 2 option
-			$(document).on('change', '.wpforms-field-option-address .format-selected input.hide', function(e) {
+			$(document).on('change', '.wpforms-field-option-address input.hide', function(e) {
 				var $this    = $(this),
 					id       = $this.parent().parent().data('field-id'),
 					subfield = $this.parent().parent().data('subfield');
@@ -673,7 +673,7 @@
 				$('#wpforms-field-'+id).toggleClass('sublabel_hide');
 			});
 
-			// Real-time updates for Name field "Format" option
+			// Real-time updates for Date/Time and Name "Format" option
 			$(document).on('change', '.wpforms-field-option-row-format select', function(e) {
 				var $this = $(this),
 					value = $this.val(),
@@ -682,8 +682,23 @@
 				$('#wpforms-field-option-'+id).find('.format-selected').removeClass().addClass('format-selected format-selected-'+value);
 			})
 
+			// Real-time updates specific for Address "Scheme" option
+			$(document).on('change', '.wpforms-field-option-row-scheme select', function(e) {
+				var $this = $(this),
+					value = $this.val(),
+					id    = $this.parent().data('field-id');
+				$('#wpforms-field-'+id).find('.wpforms-address-scheme').addClass('wpforms-hide');
+				$('#wpforms-field-'+id).find('.wpforms-address-scheme-'+value).removeClass('wpforms-hide');
+				
+				if ( $('#wpforms-field-'+id).find('.wpforms-address-scheme-'+value+' .wpforms-country' ).children().length == 0 ) {
+					$('#wpforms-field-option-'+id).find('.wpforms-field-option-row-country').addClass('wpforms-hidden');
+				} else {
+					$('#wpforms-field-option-'+id).find('.wpforms-field-option-row-country').removeClass('wpforms-hidden');
+				}
+			})
+
 			// Real-time updates for Address, Date/Time, and Name "Placeholder" field options
-			$(document).on('input', '.wpforms-field-option .format-selected input.placeholder', function(e) {
+			$(document).on('input', '.wpforms-field-option .format-selected input.placeholder, .wpforms-field-option-address input.placeholder', function(e) {
 				var $this    = $(this),
 					value    = $this.val(),
 					id       = $this.parent().parent().data('field-id'),
@@ -735,11 +750,9 @@
 			$(document).on('change', '.wpforms-field-option-row-nav_align select', function(e) {
 				var $this = $(this), 
 					value = $this.val();
-
 				if (!value) {
 					value = 'center';
 				}
-
 				$('.wpforms-pagebreak-buttons').removeClass('wpforms-pagebreak-buttons-center wpforms-pagebreak-buttons-left wpforms-pagebreak-buttons-right wpforms-pagebreak-buttons-split').addClass('wpforms-pagebreak-buttons-'+value);
 			});
 
@@ -762,10 +775,19 @@
 
 			// Real-time updates for Single Item field "Item Price" option
 			$(document).on('input', '.wpforms-field-option-row-price input', function(e) {
-				var $this = $(this), 
-					value = $this.val(),
-					id    = $this.parent().data('field-id');
-				$('#wpforms-field-'+id).find('.price').text(value);
+				var $this      = $(this), 
+					value      = $this.val(),
+					id         = $this.parent().data('field-id'),
+					sanitized  = wpf.amountSanitize(value),
+					formatted  = wpf.amountFormat(sanitized),
+					singleItem;
+				if ( wpforms_builder.currency_symbol_pos == 'right' ) {
+					singleItem = formatted+' '+wpforms_builder.currency_symbol;
+				} else {
+					singleItem = wpforms_builder.currency_symbol+' '+formatted;
+				}
+				$('#wpforms-field-'+id).find('.primary-input').val(formatted);
+				$('#wpforms-field-'+id).find('.price').text(singleItem);
 			});
 
 			// Real-time updates for payment CC icons
@@ -773,7 +795,6 @@
 				var $this = $(this), 
 					card  = $this.data('card')
 					id    = $this.parent().data('field-id');
-					console.log( card + ' - ' + id );
 				$('#wpforms-field-'+id).find('img.icon-'+card).toggleClass('card_hide');
 			});
 

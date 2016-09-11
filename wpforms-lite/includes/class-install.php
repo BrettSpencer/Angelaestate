@@ -37,7 +37,15 @@ class WPForms_Install {
 		do_action( 'wpforms_install' );
 
 		// Set current version, to be referenced in future updates
-		update_option( 'wpforms_version', WPFORMS_VERSION );	
+		update_option( 'wpforms_version', WPFORMS_VERSION );
+
+		// Store the date when the initial activation was performed
+		$type      = class_exists( 'WPForms_Lite' ) ? 'lite' : 'pro';
+		$activated = get_option( 'wpforms_activated', array() );
+		if ( empty( $activated[$type] ) ) {
+			$activated[$type] = time();
+			update_option( 'wpforms_activated', $activated );
+		}
 
 		// Abort so we only set the transient for single site installs
 		if ( is_network_admin() || isset( $_GET['activate-multi'] ) ) {

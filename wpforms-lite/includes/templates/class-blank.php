@@ -29,6 +29,7 @@ class WPForms_Template_Blank extends WPForms_Template {
 			'settings' => array(
 				'honeypot'                    => '1',
 				'confirmation_message_scroll' => '1',
+				'submit_text_processing'      => __( 'Sending...', 'wpforms' ),
 			),
 			'meta'     => array(
 				'template' => $this->slug,

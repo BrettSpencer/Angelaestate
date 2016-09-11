@@ -412,7 +412,19 @@ class WPForms_Settings {
 
 		$return  = '### Begin System Info ###' . "\n\n";
 
-		// Start with the basics...
+		// WPForms info
+		$activated = get_option( 'wpforms_activated', array() );
+		$return .= '-- WPForms Info' . "\n\n";
+		if ( !empty( $activated['pro'] ) ) {
+			$date    = $activated['pro'] + ( get_option( 'gmt_offset' ) * 3600 );
+			$return .= 'Pro:                      ' . date_i18n( __( 'M j, Y @ g:ia' ), $date ) . "\n";
+		}
+		if ( !empty( $activated['lite'] ) ) {
+			$date    = $activated['lite'] + ( get_option( 'gmt_offset' ) * 3600 );
+			$return .= 'Lite:                     ' . date_i18n( __( 'M j, Y @ g:ia' ), $date ) . "\n";
+		}
+
+		// Now the basics...
 		$return .= '-- Site Info' . "\n\n";
 		$return .= 'Site URL:                 ' . site_url() . "\n";
 		$return .= 'Home URL:                 ' . home_url() . "\n";

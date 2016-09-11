@@ -16,6 +16,10 @@
 	display: table;
 }
 
+#wpforms-hidden {
+	display: none;
+}
+
 
 /* Sidebar
 -------------------------------------------------------------- */
@@ -462,9 +466,6 @@
 	font-weight: 400;
 }
 
-#wpforms-panel-fields .wpforms-field-option-address .format-selected-us .wpforms-field-option-row-country,
-#wpforms-panel-fields .wpforms-field-option-address .format-selected-us .wpforms-field-option-row-region,
-#wpforms-panel-fields .wpforms-field-option-address .format-selected-international .wpforms-field-option-row-state,
 #wpforms-panel-fields .wpforms-field-option-name .format-selected-simple  .wpforms-field-option-row-first,
 #wpforms-panel-fields .wpforms-field-option-name .format-selected-simple  .wpforms-field-option-row-middle,
 #wpforms-panel-fields .wpforms-field-option-name .format-selected-simple  .wpforms-field-option-row-last,
@@ -527,6 +528,10 @@
 #wpforms-panel-fields .wpforms-field .wpforms-field-row {
 	margin: 0 0 10px 0;
 	position: relative;
+}
+
+#wpforms-panel-fields .wpforms-field .wpforms-field-row:last-of-type {
+	margin: 0;
 }
 
 #wpforms-panel-fields .wpforms-field .wpforms-field-delete {
@@ -800,22 +805,19 @@
 }
 
 /* Address field */
-#wpforms-panel-fields .wpforms-field-address.size-small .format-selected {
+#wpforms-panel-fields .wpforms-field-address.size-small .wpforms-address-scheme {
 	width: 25%;
 }
 
-#wpforms-panel-fields .wpforms-field-address.size-medium .format-selected,
-#wpforms-panel-fields .wpforms-field-address .format-selected {
+#wpforms-panel-fields .wpforms-field-address.size-medium .wpforms-address-scheme,
+#wpforms-panel-fields .wpforms-field-address .wpforms-address-scheme {
 	width: 65%;
 }
 
-#wpforms-panel-fields .wpforms-field-address.size-large .format-selected {
+#wpforms-panel-fields .wpforms-field-address.size-large .wpforms-address-scheme {
 	width: 100%;
 }
 
-#wpforms-panel-fields .wpforms-field-address .format-selected-international .us-only,
-#wpforms-panel-fields .wpforms-field-address .format-selected-us .international-only,
-#wpforms-panel-fields .wpforms-field-address .format-selected-us .wpforms-country,
 #wpforms-panel-fields .wpforms-field-address .wpforms-hide{
 	display: none;
 }

@@ -127,6 +127,14 @@ class WPForms_Builder_Panel_Settings extends WPForms_Builder_Panel {
 		wpforms_panel_field(
 			'text',
 			'settings',
+			'submit_text_processing',
+			$this->form_data,
+			__( 'Submit Button Processing Text', 'wpforms' ),
+			array( 'tooltip' => __( 'Enter the submit button text you would like the button display while the form submit is processing.', 'wpforms' ) )
+		);
+		wpforms_panel_field(
+			'text',
+			'settings',
 			'submit_class',
 			$this->form_data,
 			__( 'Submit Button CSS Class', 'wpforms' ),
