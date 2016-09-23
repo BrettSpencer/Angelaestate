@@ -1,11 +1,10 @@
 /*
-Theme Name: Angela Estate Theme
-Template: sensible_pro_2.0-child
+Theme Name: Sensible Pro 2.0
 Theme URI: https://modernthemes.net/wordpress-themes/sensible-pro/
-Author: Dark Mass Design
-Author URI: http://darkmassdesign.com
-Description: Angela Estate is a small, family-owned craft winery in Oregon with an international pedigree. The winery is a collaboration between second-generation South African winery owners, Antony & Angela Beck and winemaker, Ken Wright. We specialize in producing single-vineyard, estate Pinot noirs from the Yamhill-Carlton AVA in the Willamette Valley of Oregon.
-Version: 1.0.0
+Author: ModernThemes
+Author URI: http://modernthemes.net
+Description: Sensible is a multi-purpose theme which can be used for any type of website. It is a flexbible theme which can be used to help build an online presence with attractive features. I mean, when we made this theme, we had everyone in mind. No matter what kind of site you have, you can use this theme. Business? No problem. Agency? Knock yourself out. Just trying to get some blogs going? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. Visit https://modernthemes.net/theme-demos/?theme=Sensible%20Pro for the theme demo.
+Version: 2.2.4
 Details URI: http://modernthemes.net/updates/changelogs/sensiblepro-changelog.html
 Text Domain: sensible
 Tags: white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout
@@ -1603,7 +1602,7 @@ object {
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
-.wp-caption {
+.wp-caption {float:left;
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
@@ -2204,5 +2203,4 @@ h6.wow.animated.fadeInLeft {
 #video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
 	background: white;
 	color: #98002e;
-	border: 1px solid #98002e;
 }

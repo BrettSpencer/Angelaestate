@@ -1602,7 +1602,7 @@ object {
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
-.wp-caption {
+.wp-caption {float:left;
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
@@ -1841,7 +1841,7 @@ body {
 }
 
 .col-9-12 {
-	width: 100%;
+	width: 75%;
 }
 
 .col-5-12 {
@@ -2203,5 +2203,4 @@ h6.wow.animated.fadeInLeft {
 #video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
 	background: white;
 	color: #98002e;
-	border: 1px solid #98002e;
 }
