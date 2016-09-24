@@ -1904,6 +1904,40 @@ body {
 	margin-left: 8.33%
 }
 
+#video-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: auto;
+	padding-top: 22%;
+	color: white;
+	width:100%;
+	text-align:center;
+}
+
+#video-overlay h1.top-wow {
+	font-size: 45px;
+}
+
+#video-overlay a.buy-button-text {
+	display: inline-block;
+	font-size: larger;
+	width: 100px;
+	background: #98002e;
+	padding: 5px;
+	color: #ffffff;
+	border-radius: 4px;
+ 	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+
+#video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
+	background: white;
+	color: #98002e;
+}
+
 @media handheld, only screen and (max-width: 769px) {
 	
 	.featured-img-header {
@@ -2115,6 +2149,15 @@ body {
 	display: block;
 	float: none;
 	}
+
+	#video-overlay h1 {
+	font-size: 100%;
+	line-height:20px;
+	}
+
+	#video-overlay h1.wow {
+	font-size: 100%;
+	}
 }
 
 
@@ -2171,36 +2214,3 @@ h6.wow.animated.fadeInLeft {
 	font-family: Chaparral Pro Regular;
 }
 
-#video-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	margin: auto;
-	padding-top: 22%;
-	color: white;
-	width:100%;
-	text-align:center;
-}
-
-#video-overlay h1.top-wow {
-	font-size: 45px;
-}
-
-#video-overlay a.buy-button-text {
-	display: inline-block;
-	font-size: larger;
-	width: 100px;
-	background: #98002e;
-	padding: 5px;
-	color: #ffffff;
-	border-radius: 4px;
- 	text-align: center;
-	outline: none;
-	text-decoration: none;
-}
-
-#video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
-	background: white;
-	color: #98002e;
-}

@@ -24,7 +24,7 @@ get_header(); ?>
 			<section class="error-404 not-found"> 
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'sensible' ); ?></p>
+					<p><?php _e( 'It looks like you took a wrong turn. Maybe try one of the links below or a search?', 'sensible' ); ?></p>
 
 					<?php get_search_form(); ?>
 
@@ -47,12 +47,7 @@ get_header(); ?>
 					</div><!-- .widget -->
 					<?php endif; ?>
 
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'sensible' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
+					
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
 
 				</div><!-- .page-content -->
