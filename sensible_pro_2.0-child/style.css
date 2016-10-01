@@ -1864,6 +1864,20 @@ body {
 	text-decoration: none;
 }
 
+a.buy-button-text {
+	display: inline-block;
+	font-size: larger;
+	width: 100px;
+	background: #98002e;
+	padding: 5px;
+	color: #ffffff;
+	border-radius: 4px;
+ 	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+
+
 #video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
 	background: white;
 	color: #98002e;
@@ -2130,13 +2144,6 @@ body {
 	
 }
 
-.label {
-	border: 1px solid gray;
-}
-
-#label-align a {
-	padding-right:1em;
-}
 
 .brandon {
 	font-family:Brandon Grotesque Bold;
