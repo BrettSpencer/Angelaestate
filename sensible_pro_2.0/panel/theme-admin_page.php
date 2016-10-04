@@ -104,9 +104,9 @@ add_action('admin_menu', 'sensible_setup_menu');
 		echo '<div class="grid grid-pad"><div class="col-1-1"><h2 style="text-align: center;">'; 
 		printf( esc_html__( 'Changelog' , 'sensible' ) );
         echo "</h2>"; 
-		
+		 
 		echo '<p style="text-align: center;">'; 
-		printf( esc_html__('2.2.4 - Fix: number input bug in theme customizer', 'sensible' )); 
+		printf( esc_html__('2.2.5 - Update: added an instagram option for Team Members', 'sensible' )); 
 		echo '</p>';
 		
 		echo '<p style="text-align: center;">'; 

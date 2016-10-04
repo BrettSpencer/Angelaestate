@@ -81,9 +81,12 @@ all theme documentation can be found at http://modernthemes.net/documentation/se
 
 == Description ==
 
-Sensible is a multi-purpose theme which can be used for any type of website. It is a flexbible theme which can be used to help build an online presence with attractive features. I mean, when we made this theme, we had everyone in mind. No matter what kind of site you have, you can use this theme. Business? No problem. Agency? Knock yourself out. Just trying to get some blogs going? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. You can check the demo at http://modernthemes.net/wordpress-themes/sensible-pro/.
+Sensible is a multi-purpose theme which can be used for any type of website. It is a flexible theme which can be used to help build an online presence with attractive features. I mean, when we made this theme, we had everyone in mind. No matter what kind of site you have, you can use this theme. Business? No problem. Agency? Knock yourself out. Just trying to get some blogs going? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. You can check the demo at http://modernthemes.net/wordpress-themes/sensible-pro/.
 
 == Changelog ==
+
+= 2.2.5 =
+* Update: added an instagram option for Team Members 
 
 = 2.2.4 =
 * Fix: number input bug in theme customizer

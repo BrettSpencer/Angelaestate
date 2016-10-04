@@ -10,7 +10,9 @@
 	<?php if ( is_active_sidebar('home-skills-widget') ) : ?>
         
     	<div class="home-skills"> 
-       		    <div class="col-1-1"> 
+       		<div class="grid grid-pad">
+        		<div class="col-1-1"> 
+        
     				<?php dynamic_sidebar('home-skills-widget'); ?>  
                          
                 </div>   

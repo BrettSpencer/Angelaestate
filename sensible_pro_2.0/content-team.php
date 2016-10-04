@@ -63,6 +63,10 @@
                                         <a href="<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_twitter', true ); echo $text; ?>" target="_blank"><i class="fa fa-twitter"></i></a>
                                     <?php endif; ?>
                                     
+                                    <?php if (get_post_meta( $post->ID, '_sn_primary_instagram', true ) ): ?>
+                                        <a href="<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_instagram', true ); echo $text; ?>" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <?php endif; ?>
+                                    
                                     <?php if (get_post_meta( $post->ID, '_sn_primary_linkedin', true ) ): ?>
                                         <a href="<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_linkedin', true ); echo $text; ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     <?php endif; ?>

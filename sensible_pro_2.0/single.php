@@ -14,7 +14,7 @@ get_header(); ?>
     	<header class="featured-img-header" data-speed="8" data-type="background" style="background: url('<?php echo $image; ?>') 50% 0 no-repeat fixed;">
     		<div class="grid grid-pad">
         		<div class="col-1-1">
-					<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         		</div><!-- .col-1-1 -->
         	</div><!-- .grid --> 
 		</header><!-- .entry-header --> 
@@ -34,7 +34,10 @@ get_header(); ?>
  	<?php while ( have_posts() ) : the_post(); ?>
        
 	<header class="single-blog-entry-header">
-		
+		<div class="entry-meta">
+			<?php esc_html_e( 'Posted by, ', 'sensible' ); ?><?php the_author(); ?><?php echo get_avatar( get_the_author_meta('email'), get_the_author() ); ?>
+            <?php esc_html_e( 'on ', 'sensible' ); ?><?php the_date(); ?> 
+		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
    
 	<div class="grid grid-pad">
@@ -49,6 +52,8 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>  
 
+			<?php sensible_post_nav(); ?> 
+
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || get_comments_number() ) :
@@ -62,7 +67,7 @@ get_header(); ?>
 		</div><!-- #primary -->
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?> 
-    	
+    	<?php get_sidebar(); ?>
     <?php endif; ?>
 
 	</div><!-- grid -->

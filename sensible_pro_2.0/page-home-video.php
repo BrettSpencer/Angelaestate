@@ -15,7 +15,6 @@ get_header(); ?>
 	
 	?>
 
-
 	<div  id="video-hero" class="home-video">
 		<?php if ( (!empty($home_video_mp4) OR !empty($home_video_webm) OR !empty($home_video_ogv)) AND !wp_is_mobile() ) : 	?> 
 			<video autoplay loop>
@@ -31,24 +30,8 @@ get_header(); ?>
 				<?php endif; ?>  
             
 			</video>
-		<div id="video-overlay">
-			<h1 class="top-wow">HIGHEST RATED PINOT IN US BY IWC 2016</h1>
-			<h1>ANGELA ESTATE 2013 PINOT NOIR</h1>
-			<div class="buy-button">
-            		<a href="http://xudle.com" class="buy-button-text">Buy Wine</a>
-        		</div><!--end buy-button-->
-		</div><!-- video-overlay -->
-
 		<?php else : ?>
 			<?php the_post_thumbnail('full'); ?>
-
-			<div id="video-overlay">
-			<h1 class="top-wow">HIGHEST RATED PINOT IN US BY IWC 2016</h1>
-			<h1>ANGELA ESTATE 2013 PINOT NOIR</h1>
-			<div class="buy-button">
-            		<a href="http://xudle.com" class="buy-button-text">Buy Wine</a>
-        		</div><!--end buy-button-->
-
 		<?php endif; ?>
  
 	</div>
@@ -60,11 +43,19 @@ get_header(); ?>
 		<?php get_template_part( 'content', 'home-social' ); // home social area ?>
         
 	<?php endif; ?>
+		
         
     <?php if( get_theme_mod( 'active_intro' ) == '') : ?>  
         
    		<?php get_template_part( 'content', 'intro' ); // intro content ?>
          
+	<?php endif; ?>
+	
+        
+    <?php if( get_theme_mod( 'active_services' ) == '') : ?>  
+        		
+    	<?php get_template_part( 'content', 'services' ); // services content ?>
+		
 	<?php endif; ?>
      
         
@@ -83,12 +74,6 @@ get_header(); ?>
         
         <?php endif; ?> 
          
-	<?php endif; ?>
-
-	<?php if( get_theme_mod( 'active_services' ) == '') : ?>  
-        		
-    	<?php get_template_part( 'content', 'services' ); // services content ?>
-		
 	<?php endif; ?>
 		
         

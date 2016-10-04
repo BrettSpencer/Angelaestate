@@ -4,7 +4,7 @@ Theme URI: https://modernthemes.net/wordpress-themes/sensible-pro/
 Author: ModernThemes
 Author URI: http://modernthemes.net
 Description: Sensible is a multi-purpose theme which can be used for any type of website. It is a flexbible theme which can be used to help build an online presence with attractive features. I mean, when we made this theme, we had everyone in mind. No matter what kind of site you have, you can use this theme. Business? No problem. Agency? Knock yourself out. Just trying to get some blogs going? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. Visit https://modernthemes.net/theme-demos/?theme=Sensible%20Pro for the theme demo.
-Version: 2.2.4
+Version: 2.2.5
 Details URI: http://modernthemes.net/updates/changelogs/sensiblepro-changelog.html
 Text Domain: sensible
 Tags: white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout
@@ -192,7 +192,7 @@ q {
 	quotes: "" "";
 }
 
-a { 	color: #6d6e70;
+a {
 	outline: 0;
 	text-decoration: none;
 }
@@ -217,38 +217,13 @@ a.added_to_cart {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
-@font-face {
-    font-family: Brandon Grotesque Bold; 
-    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/BrandonGrotesque-Bold.otf); 
-    font-weight: bold; 
-}
-
-@font-face {
-    font-family: Chaparral Pro Regular; 
-    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Regular.otf); 
-    font-weight: normal; 
-}
-
-@font-face {
-    font-family: Chaparral Pro Italic; 
-    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Italic.otf); 
-    font-weight: normal; 
-}
-
-@font-face {
-    font-family: Chaparral Pro Bold; 
-    src: url(http://www.darkmassdesign.com/angelaestate/wp-content/themes/sensible-wp/css/fonts/ChaparralPro-Bold.otf); 
-    font-weight: normal; 
-}
-
-
 body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
-	font-family:  Chaparral Pro Regular;'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.8;
@@ -259,7 +234,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {	font-family: Brandon Grotesque Bold;
+h6 {
 	clear: both;
 	margin-bottom: 0.5em;
 }
@@ -271,20 +246,20 @@ h4 { font-size: 24px; line-height: 28px; }
 h5 { font-size: 20px; line-height: 24px; }
 h6 { font-size: 16px; line-height: 20px; font-weight: 600; text-transform: uppercase; }
 
-p {	font-family: Chaparral Pro Regular;
+p {
 	margin-bottom: 1.5em;
 	color: #8c9398;
 }
 
 b,
-strong {font-family: Chaparral Pro Bold;
+strong {
 	font-weight: 600;
 }
 
 dfn,
 cite,
 em,
-i {	font-family: Chaparral Pro Italic;
+i {
 	font-style: italic;
 }
 
@@ -293,7 +268,6 @@ blockquote {
 	border-radius: 0 4px 4px 0;
     border-left: 5px solid #ea474b;
     color: #999;
-font-family: Chaparral Pro Italic;
     font-style: italic;
     padding: 22px 20px 1px;
 	margin: 0 0 1em;
@@ -305,7 +279,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: font-family: Chaparral Pro Regular,"Courier 10 Pitch", Courier, monospace;
+	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 1.5rem;
 	line-height: 1.6;
@@ -319,7 +293,7 @@ code,
 kbd,
 tt,
 var {
-	font: 15px Chaparral Pro Regular, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
 abbr,
@@ -430,7 +404,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	font-family: Brandon Grotesque Bold;
 	border: 2px solid;
 	border-color: #ea474b;
 	border-radius: 4px;
@@ -530,11 +503,11 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #6d6e70;
+	color: #ea474b;
 }
 
 a:hover {
-	color: #98002e;
+	color: #ea474b;
 }
 
 /*--------------------------------------------------------------
@@ -560,7 +533,6 @@ a:hover {
 
 .main-navigation a {
 	font-weight: 600;
-	font-family: Brandon Grotesque Bold;
 	display: block;
 	text-decoration: none;
 	color: #fff;
@@ -1178,7 +1150,7 @@ h1.site-title {
 	padding: 150px 0 40px;
 }
 .featured-img-header {
-	padding: 250px 0 500px;
+	padding: 250px 0 100px;
     position: relative; 
 	-webkit-background-size: cover !important;  
   	-moz-background-size: cover !important; 
@@ -1602,7 +1574,7 @@ object {
 /*--------------------------------------------------------------
 12.1 Captions
 --------------------------------------------------------------*/
-.wp-caption {float:left;
+.wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
@@ -1904,40 +1876,6 @@ body {
 	margin-left: 8.33%
 }
 
-#video-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	margin: auto;
-	padding-top: 22%;
-	color: white;
-	width:100%;
-	text-align:center;
-}
-
-#video-overlay h1.top-wow {
-	font-size: 45px;
-}
-
-#video-overlay a.buy-button-text {
-	display: inline-block;
-	font-size: larger;
-	width: 100px;
-	background: #98002e;
-	padding: 5px;
-	color: #ffffff;
-	border-radius: 4px;
- 	text-align: center;
-	outline: none;
-	text-decoration: none;
-}
-
-#video-overlay a.buy-button-text:hover, #video-overlay a.buy-button-text:active {
-	background: white;
-	color: #98002e;
-}
-
 @media handheld, only screen and (max-width: 769px) {
 	
 	.featured-img-header {
@@ -2144,20 +2082,8 @@ body {
 	.secondary-header .push-right {
 		float: right;
 	}
-
-	.alignleft {
-	display: block;
-	float: none;
-	}
-
-	#video-overlay h1 {
-	font-size: 100%;
-	line-height:20px;
-	}
-
-	#video-overlay h1.wow {
-	font-size: 100%;
-	}
+	
+	 
 }
 
 
@@ -2197,20 +2123,3 @@ body {
 	} 
 	
 }
-
-.label {
-	border: 1px solid gray;
-}
-
-#label-align a {
-	padding-right:1em;
-}
-
-.brandon {
-	font-family:Brandon Grotesque Bold;
-}
-
-h6.wow.animated.fadeInLeft {
-	font-family: Chaparral Pro Regular;
-}
-

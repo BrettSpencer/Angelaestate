@@ -421,7 +421,7 @@ function sensible_featured_metaboxes( $meta_boxes ) {
     			'name' => __( 'Button URL', 'sensible' ),
     			'desc' => __( 'Enter the URL you want this slide to link to.', 'sensible' ),
     			'id' => $prefix . 'primary_url', 
-    			'type' => 'text_url', 
+    			'type' => 'text_url',
 				),
 			array(
     			'name' => __( 'Button Text', 'sensible' ), 
@@ -481,6 +481,12 @@ function sensible_featured_metaboxes( $meta_boxes ) {
     			'name' => __( 'Twitter URL', 'sensible' ),
     			'desc' => __( 'Enter the Twitter URL for the team member.', 'sensible' ),
     			'id' => $prefix . 'primary_twitter', 
+    			'type' => 'text_url', 
+				),
+			array(
+    			'name' => __( 'Instagram URL', 'sensible' ),
+    			'desc' => __( 'Enter the Instagram URL for the team member.', 'sensible' ),
+    			'id' => $prefix . 'primary_instagram',
     			'type' => 'text_url', 
 				),
 			array(

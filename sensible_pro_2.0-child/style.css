@@ -1883,6 +1883,25 @@ a.buy-button-text {
 	color: #98002e;
 }
 
+a.buy-button-text-2 {
+	display: inline-block;
+	font-size: larger;
+	width: 100px;
+	background: #98002e;
+	padding: 5px;
+	color: #ffffff;
+	border-radius: 4px;
+ 	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+
+a.buy-button-text-2:hover, a.buy-button-text-2:active{ 
+	color: #98002e;
+	background: white;
+	border: 1px solid #98002e;
+}
+
 @media handheld, only screen and (max-width: 769px) {
 	
 	.featured-img-header {
