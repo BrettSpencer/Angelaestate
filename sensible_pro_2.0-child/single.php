@@ -46,7 +46,7 @@ get_header(); ?>
     	<?php endif; ?> 
         
 			<main id="main" class="site-main" role="main">
-
+<div class="post-width">
 			<?php get_template_part( 'content', 'single' ); ?>  
 
 			<?php
@@ -57,7 +57,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // end of the loop. ?>
-
+</div>
 			</main><!-- #main -->
 		</div><!-- #primary -->
 

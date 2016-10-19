@@ -393,6 +393,16 @@ class sensible_social extends WP_Widget {
 
 	</p> 
     
+    <!-- tripadvisor --> 
+    
+    <p>
+
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_tripadvisor_link')); ?>"><?php esc_html_e('Tripadvisor URL:', 'sensible'); ?></label>
+
+	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_tripadvisor_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_tripadvisor_link')); ?>" type="text" value="<?php echo esc_url( $social_tripadvisor_link ); ?>" /> 
+
+	</p> 
+    
     <!-- email --> 
     
     <p>
@@ -490,7 +500,9 @@ class sensible_social extends WP_Widget {
 		
 		$instance['social_spotify_link']  = 	esc_url_raw($new_instance['social_spotify_link']); 
 		
-		$instance['social_weibo_link']  = 	esc_url_raw($new_instance['social_weibo_link']); 
+		$instance['social_weibo_link']  = 	esc_url_raw($new_instance['social_weibo_link']);
+		
+		$instance['social_tripadvisor_link']  = 	esc_url_raw($new_instance['social_tripadvisor_link']); 
 		
 		$instance['social_email_link']  = 	esc_html($new_instance['social_email_link']);
 		
@@ -627,6 +639,8 @@ class sensible_social extends WP_Widget {
 		$social_spotify_link  = isset( $instance['social_spotify_link'] ) ? esc_url( $instance['social_spotify_link'] ) : '';
 		
 		$social_weibo_link  = isset( $instance['social_weibo_link'] ) ? esc_url( $instance['social_weibo_link'] ) : '';
+		
+		$social_tripadvisor_link  = isset( $instance['social_tripadvisor_link'] ) ? esc_url( $instance['social_tripadvisor_link'] ) : '';
 		
 		$social_email_link  = isset( $instance['social_email_link'] ) ? esc_html( $instance['social_email_link'] ) : '';
 		
@@ -834,6 +848,13 @@ class sensible_social extends WP_Widget {
             	<li>
                 <a href="<?php echo esc_url( $social_weibo_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
                 <i class="fa fa-weibo"></i>     
+                </a>
+                </li>
+			<?php endif; ?>
+            <?php if ($social_tripadvisor_link !='') : ?>
+            	<li>
+                <a href="<?php echo esc_url( $social_tripadvisor_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
+                <i class="fa fa-tripadvisor"></i>     
                 </a>
                 </li>
 			<?php endif; ?> 

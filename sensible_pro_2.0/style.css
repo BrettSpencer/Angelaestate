@@ -4,7 +4,7 @@ Theme URI: https://modernthemes.net/wordpress-themes/sensible-pro/
 Author: ModernThemes
 Author URI: http://modernthemes.net
 Description: Sensible is a multi-purpose theme which can be used for any type of website. It is a flexbible theme which can be used to help build an online presence with attractive features. I mean, when we made this theme, we had everyone in mind. No matter what kind of site you have, you can use this theme. Business? No problem. Agency? Knock yourself out. Just trying to get some blogs going? This theme is perfect for it. This theme is completely customizable through the Wordpress Theme Customizer. Visit https://modernthemes.net/theme-demos/?theme=Sensible%20Pro for the theme demo.
-Version: 2.2.5
+Version: 2.2.6
 Details URI: http://modernthemes.net/updates/changelogs/sensiblepro-changelog.html
 Text Domain: sensible
 Tags: white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout
@@ -842,7 +842,7 @@ a:hover {
 	vertical-align: middle;
 }
 .slide-content span h2 {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 62px;
 	line-height: 64px;
 	color: #fff;
