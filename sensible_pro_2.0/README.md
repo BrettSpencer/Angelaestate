@@ -85,6 +85,9 @@ Sensible is a multi-purpose theme which can be used for any type of website. It 
 
 == Changelog ==
 
+= 2.2.7 =
+* Update: added personal website option to Team Members and updated fontawesome to 4.7
+
 = 2.2.6 =
 * Update: added Tripadvisor to social icons plugin
 

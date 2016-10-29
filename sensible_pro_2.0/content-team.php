@@ -74,6 +74,10 @@
                             		<?php if (get_post_meta( $post->ID, '_sn_primary_google', true ) ): ?>
                                         <a href="<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_google', true ); echo $text; ?>" target="_blank"><i class="fa fa-google-plus"></i></a>
                                     <?php endif; ?>
+                                    
+                                    <?php if (get_post_meta( $post->ID, '_sn_primary_website', true ) ): ?>
+                                        <a href="<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_website', true ); echo $text; ?>" target="_blank"><i class="fa fa-desktop"></i></a>
+                                    <?php endif; ?>
                     
                     				<?php if (get_post_meta( $post->ID, '_sn_primary_email', true ) ): ?>
                     					<a href="mailto:<?php global $post; $text = get_post_meta( $post->ID, '_sn_primary_email', true ); echo $text; ?>" target="_blank"><i class="fa fa-envelope-o"></i></a>

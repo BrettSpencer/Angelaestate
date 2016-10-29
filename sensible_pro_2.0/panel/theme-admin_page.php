@@ -106,6 +106,10 @@ add_action('admin_menu', 'sensible_setup_menu');
         echo "</h2>"; 
 		
 		echo '<p style="text-align: center;">'; 
+		printf( esc_html__('2.2.7 - Update: added personal website option to Team Members and updated fontawesome to 4.7', 'sensible' )); 
+		echo '</p>';
+		
+		echo '<p style="text-align: center;">'; 
 		printf( esc_html__('2.2.6 - Update: added Tripadvisor to social icons plugin', 'sensible' )); 
 		echo '</p>';
 		 

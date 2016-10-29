@@ -499,7 +499,13 @@ function sensible_featured_metaboxes( $meta_boxes ) {
     			'name' => __( 'Google Plus URL', 'sensible' ),
     			'desc' => __( 'Enter the Google Plus URL for the team member.', 'sensible' ),
     			'id' => $prefix . 'primary_google',  
-    			'type' => 'text_url', 
+    			'type' => 'text_url',
+				),
+			array(
+    			'name' => __( 'Personal Website URL', 'sensible' ),
+    			'desc' => __( 'Enter the website URL for the team member.', 'sensible' ),
+    			'id' => $prefix . 'primary_website',  
+    			'type' => 'text_url',
 				),
 			array(
     			'name' => __( 'Email URL', 'sensible' ),
